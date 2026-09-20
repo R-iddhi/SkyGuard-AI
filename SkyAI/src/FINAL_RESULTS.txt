@@ -1,0 +1,55 @@
+============================================================
+SKYGUARD AI - FINAL BENCHMARK RESULTS
+============================================================
+
+Benchmark Dataset:
+aws_clean_final_benchmark.csv
+
+Total observations: 16514
+Actual anomaly observations: 18
+Actual normal observations: 16496
+
+POINT-LEVEL RESULTS
+------------------------------------------------------------
+True positives:  18
+False positives: 3
+False negatives: 0
+True negatives:  16493
+
+Precision: 0.8571 (85.71%)
+Recall:    1.0000 (100%)
+F1 Score:  0.9231 (92.31%)
+
+Confusion Matrix:
+[[16493     3]
+ [    0    18]]
+
+ANOMALY EVENT RESULTS
+------------------------------------------------------------
+TEMP_SPIKE_01   - DETECTED
+TEMP_DROP_01    - DETECTED
+HUM_HIGH_01     - DETECTED
+HUM_LOW_01      - DETECTED
+PRESS_SPIKE_01  - DETECTED
+PRESS_DROP_01   - DETECTED
+FROZEN_01       - DETECTED
+MULTI_01        - DETECTED
+TEMP_HUM_01     - DETECTED
+
+Events detected: 9/9
+Event recall: 1.0000 (100%)
+
+DETECTOR EVIDENCE
+------------------------------------------------------------
+Physical anomalies:      2
+Recovery anomalies:      8
+Frozen anomalies:        11
+Multivariate anomalies:  3
+
+NOTE
+------------------------------------------------------------
+These results are from a controlled benchmark containing
+synthetic/injected anomaly scenarios. They should not be
+presented as production or real-world accuracy.
+
+============================================================
